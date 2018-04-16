@@ -1,4 +1,4 @@
-package com.training.pallindrome;
+package com.training.pallindrome_Q1;
 
 import java.util.Scanner;
 
@@ -22,7 +22,6 @@ public class Pallindrome_Q1 {
 				in=in/10;
 				out=(out*10)+x;			
 			}
-			//System.out.println(out);
 
 			if(m==out)
 				System.out.println("true");
