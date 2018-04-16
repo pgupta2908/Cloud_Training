@@ -16,14 +16,14 @@ public class PallindromeAndSort_Q5 {
 			wordsArr[i] = scanner.next();	
 			System.out.println(wordsArr.length);
 		}
-		/*for(int i=0; i<10; i++)
+		for(int i=0; i<10; i++)
 		{
 			for(int j=wordsArr.length-1; j>=0; j--)
 			{
 				wordOut = wordOut + wordsArr.charAt(j);
 			}
 			arrOut = arrOut + wordOut + " ";
-		}*/
+		}
 		
 	}
 
