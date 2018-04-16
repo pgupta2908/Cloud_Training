@@ -1,4 +1,4 @@
-package com.training.RevereseString_Q2;
+package com.training.revereseString_Q2;
 
 import java.util.Scanner;
 
@@ -8,14 +8,14 @@ public class StringReversal_Q2 {
 
 		Scanner scanner = new Scanner(System.in);
 		String input;
-		String arrOut;
+		String arrOut = "";
 		try {
 			System.out.println("Enter a line to reverse words ");
 			input = scanner.nextLine();
 			System.out.println("Input: \""+input+"\"");
 
 			String[] arrIn = input.split(" ");
-			arrOut = "";
+			
 			for(int i=0; i<arrIn.length; i++)
 			{
 				String wordIn = arrIn[i];
