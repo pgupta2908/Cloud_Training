@@ -7,11 +7,10 @@ public class StringReversal_Q2 {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
-		String input;
 		String arrOut = "";
 		try {
 			System.out.println("Enter a line to reverse words ");
-			input = scanner.nextLine();
+			String input = scanner.nextLine();
 			System.out.println("Input: \""+input+"\"");
 
 			String[] arrIn = input.split(" ");
