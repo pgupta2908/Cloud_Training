@@ -37,6 +37,8 @@ public class ReorganizeString {
 								//	in[i+1]=temp;
 								in[i+1]=in[i+2];
 								in[i+2]=temp;
+								System.out.println("aa");
+								
 							} 
 							else
 								continue;
@@ -60,7 +62,7 @@ public class ReorganizeString {
 						}
 					}
 					System.out.println(in);
-				}
+				}	 
 			}
 			/*String xy = in.toString();
 			if(word.equalsIgnoreCase(xy))
