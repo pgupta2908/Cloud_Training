@@ -2,7 +2,6 @@ package com.training.d17042018_ReorganizeString_Q1;
 
 import java.util.Scanner;
 
-import com.sun.org.apache.xpath.internal.operations.Equals;
 
 public class ReorganizeString {
 
@@ -16,13 +15,12 @@ public class ReorganizeString {
 		try 
 		{
 			String input = scanner.next();
-			String word = input;
 			char[] in = input.toCharArray();
 			System.out.println(in);
 
 			if (input.length()<=2)
 				System.out.println("input is wrongly entered, please enter atleast 3 characters");
-			
+
 			else 
 			{
 				for(int i=0; i<input.length()-1; i++)
@@ -41,7 +39,7 @@ public class ReorganizeString {
 								in[i+2]=temp;
 							} 
 							else
-							continue;
+								continue;
 
 						}
 					}
@@ -58,12 +56,11 @@ public class ReorganizeString {
 								in[i+1] = in[i-1];
 							} 
 							else
-							continue;
+								continue;
 						}
 					}
 					System.out.println(in);
 				}
-
 			}
 			/*String xy = in.toString();
 			if(word.equalsIgnoreCase(xy))
@@ -74,7 +71,7 @@ public class ReorganizeString {
 			{
 				System.out.println("\"input false\"");
 			}*/
-			
+
 		} 
 		catch (Exception e) {
 			System.out.println("Faced an error, please retry");
