@@ -1,4 +1,7 @@
+Cloud_Training
 .classpath
 .project
 /bin/*
 .settings/*
+.eclipse-pmd
+/target/*
