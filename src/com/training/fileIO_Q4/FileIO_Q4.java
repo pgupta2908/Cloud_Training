@@ -1,3 +1,9 @@
+
+/**
+ * @author Pratyush Gupta
+ *
+ */
+
 package com.training.fileIO_Q4;
 
 import java.io.File;
@@ -12,7 +18,7 @@ public class FileIO_Q4 {
 		Scanner scanner=new Scanner(System.in);
 
 		System.out.flush();
-		System.out.print("Enter a file name: ");	
+		System.out.print("Enter a file name: ");	
 		
 		try {
 			String filename=scanner.nextLine();	
