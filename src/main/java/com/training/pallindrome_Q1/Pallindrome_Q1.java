@@ -53,6 +53,7 @@ public class Pallindrome_Q1 {
 			System.out.println("Invalid input");
 		}
 		scanner.close();
+				
 	}
-
+	
 }
