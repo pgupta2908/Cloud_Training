@@ -1,36 +1,44 @@
+
+/**
+ * @author Pratyush Gupta
+ *
+ */
+
 package com.training.pallindrome_Q1;
+
+import java.util.Scanner;
 
 import java.util.Scanner;
 
 public class Pallindrome_Q1 {
 
-	public static void main(String[] args) {
+	public static void inputCopyainput(String[] args) {
 
 		int x=0, out=0;
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Input: ");
+		System.out.println("inputput: ");
 
 		try 
 		{
-			int in=scanner.nextInt();
-			int m=in;
+			int input=scanner.nextInt();
+			int inputCopy=input;
 
-			while (in>0)
+			while (input>0)
 			{
-				x=in%10;
-				in=in/10;
+				x=input%10;
+				input=input/10;
 				out=(out*10)+x;			
 			}
 
-			if(m==out)
+			if(inputCopy==out)
 				System.out.println("true");
 			else
 				System.out.println("false");
 		}
 		catch (Exception e)
 		{
-			System.out.println("Please provide valid input values");
+			System.out.println("Please provide valid inputput values");
 		}
 		scanner.close();
 
