@@ -1,3 +1,9 @@
+
+/**
+ * @author Pratyush Gupta
+ *
+ */
+
 package com.training.d17042018_PhoneBook_Q3;
 
 import java.util.ArrayList;
@@ -9,12 +15,9 @@ import com.training.d17042018_PhoneBook_Q3.User;;
 
 public class controller {
 
-	private final static Logger logger = Logger.getLogger(controller.class.getName());
-
-
 	public static void main(String args[])
 	{
-		List<User> user  = new ArrayList<User>();	
+		List<User> phoneBook  = new ArrayList<User>();	
 
 		while(true)
 		{
@@ -41,33 +44,33 @@ public class controller {
 			switch(choice)
 			{
 			case 1:
-				User userbook=new User();
+				User user=new User();
 				System.out.println("Enter Id");
 				String id=sc.next();
-				userbook.setPersonId(id);
+				user.setPersonId(id);
 
 				System.out.println("Enter FirstName");
 				String firstName=sc.next();
-				userbook.setFirstName(firstName);
+				user.setFirstName(firstName);
 				System.out.println("Enter LastName");
 				String lastName=	sc.next();
-				userbook.setLastName(lastName);
+				user.setLastName(lastName);
 				System.out.println("Enter Mobile Number ");
 				String mobileNumber=sc.next();
-				userbook.setMobileNumber(mobileNumber);
+				user.setMobileNumber(mobileNumber);
 				System.out.println("Details Added Succesfully");
-				user.add(userbook);
+				phoneBook.add(user);
 				break;
 
 			case 2:
 				System.out.println(" View details of All Person.");
 
-				for(User bean:user)
+				for(User user1:phoneBook)
 				{
-					System.out.println("Id"+ " "+bean.getPersonId());
-					System.out.println("First Name"+ " "+bean.getFirstName());
-					System.out.println("Last Name"+" " +bean.getLastName());
-					System.out.println("Mobile Number"+" "+bean.getMobileNumber());
+					System.out.println("Id"+ " "+user1.getPersonId());
+					System.out.println("First Name"+ " "+user1.getFirstName());
+					System.out.println("Last Name"+" " +user1.getLastName());
+					System.out.println("Mobile Number"+" "+user1.getMobileNumber());
 				}
 
 				break;
@@ -76,9 +79,9 @@ public class controller {
 				String search=sc.next();
 				int count=0;
 
-				for(User bean:user)
+				for(User user1:phoneBook)
 				{
-					if(bean.getMobileNumber().equals(search))
+					if(user1.getMobileNumber().equals(search))
 					{
 						count=1;
 						
@@ -103,18 +106,18 @@ public class controller {
 				String search1=sc.next();
 				int count1=-1;
 
-				for(User bean:user)
+				for(User user1:phoneBook)
 				{
-					if(bean.getMobileNumber().equalsIgnoreCase(search1))
+					if(user1.getMobileNumber().equalsIgnoreCase(search1))
 					{
 						
-						count1=user.indexOf(bean);
+						count1=phoneBook.indexOf(user1);
 						
 					}
 		
 
 				}
-				user.remove(count1);
+				phoneBook.remove(count1);
 		break;
 				
 			case 5:
