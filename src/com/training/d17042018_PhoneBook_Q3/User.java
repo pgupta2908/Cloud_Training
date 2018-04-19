@@ -1,45 +1,43 @@
+
+/**
+ * @author Pratyush Gupta
+ *
+ */
+
 package com.training.d17042018_PhoneBook_Q3;
 
 public class User {
 
-	private int id;
-	private String fName;
-	private String lName;
-	private String phone;
+	private String personId;
+	private String firstName;
+	private String lastName;
+	private String mobileNumber;
 	
 	
-	public int getId() {
-		return id;
+	
+	public String getPersonId() {
+		return personId;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setPersonId(String personId) {
+		this.personId = personId;
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public String getMobileNumber() {
+		return mobileNumber;
+	}
+	public void setMobileNumber(String mobileNumber) {
+		this.mobileNumber = mobileNumber;
 	}
 	
-	public String getfName() {
-		return fName;
-	}
-	public void setfName(String fName) {
-		this.fName = fName;
-	}
-	
-	public String getlName() {
-		return lName;
-	}
-	public void setlName(String lName) {
-		this.lName = lName;
-	}
-	
-	public String getPhone() {
-		return phone;
-	}
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
-	
-	
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", fName=" + fName + ", lName=" + lName + ", phone=" + phone + "]";
-	}
-			
 }
