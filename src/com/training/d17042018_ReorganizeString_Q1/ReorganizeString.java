@@ -1,3 +1,9 @@
+
+/**
+ * @author Pratyush Gupta
+ *
+ */
+
 package com.training.d17042018_ReorganizeString_Q1;
 
 import java.util.Scanner;
@@ -15,8 +21,8 @@ public class ReorganizeString {
 		try 
 		{
 			String input = scanner.next();
-			char[] in = input.toCharArray();
-			System.out.println(in);
+			char[] charIn = input.toCharArray();
+			System.out.println(charIn);
 
 			if (input.length()<=2)
 				System.out.println("input is wrongly entered, please enter atleast 3 characters");
@@ -28,15 +34,14 @@ public class ReorganizeString {
 
 					if((i==0) || (i>0 && i<input.length()-2))
 					{
-						while (in[i] == in[i + 1]) 
+						while (charIn[i] == charIn[i + 1]) 
 						{
-							if (in[i] == in[i+1]) 
+							if (charIn[i] == charIn[i+1]) 
 							{
-								temp=in[i];
-								in[i] = in[i+1];
-								//	in[i+1]=temp;
-								in[i+1]=in[i+2];
-								in[i+2]=temp;
+								temp=charIn[i];
+								charIn[i] = charIn[i+1];
+								charIn[i+1]=charIn[i+2];
+								charIn[i+2]=temp;
 								System.out.println("aa");
 								
 							} 
@@ -48,31 +53,21 @@ public class ReorganizeString {
 
 					else if(i==input.length()-2)
 					{
-						while (in[i] == in[i+1]) 
+						while (charIn[i] == charIn[i+1]) 
 						{
-							if (in[i] == in[i+1]) 
+							if (charIn[i] == charIn[i+1]) 
 							{
-								temp = in[i];
-								in[i] = in[i+1];
-								//	in[i] = temp;
-								in[i+1] = in[i-1];
+								temp = charIn[i];
+								charIn[i] = charIn[i+1];
+								charIn[i+1] = charIn[i-1];
 							} 
 							else
 								continue;
 						}
 					}
-					System.out.println(in);
+					System.out.println(charIn);
 				}	 
 			}
-			/*String xy = in.toString();
-			if(word.equalsIgnoreCase(xy))
-			{
-				System.out.println("\"true");
-			}
-			else
-			{
-				System.out.println("\"input false\"");
-			}*/
 
 		} 
 		catch (Exception e) {
